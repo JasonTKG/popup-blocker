@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Popup Blocker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="../icons/icon-48.png" width="24" height="24" alt="">
+    <h1>Popup Blocker</h1>
+  </header>
+
+  <section id="perm" hidden>
+    <p>Popup Blocker needs access to websites to block pop-ups on them.</p>
+    <button id="grant" type="button">Allow access to websites</button>
+  </section>
+
+  <section class="site">
+    <div id="host" class="host">This page</div>
+    <label class="row">
+      <input id="allowSite" type="checkbox">
+      <span>Allow pop-ups on this site</span>
+    </label>
+  </section>
+
+  <section>
+    <label class="row" for="mode">Blocking</label>
+    <select id="mode">
+      <option value="smart">Smart (recommended)</option>
+      <option value="standard">Standard</option>
+      <option value="strict">Strict</option>
+      <option value="off">Off everywhere</option>
+    </select>
+    <p id="hint" class="note"></p>
+    <p id="reload" class="note" hidden>Reload the page to apply.</p>
+  </section>
+
+  <section>
+    <h2>Blocked on this page <span id="count">0</span></h2>
+    <ul id="list"></ul>
+    <p id="empty" class="note">Nothing blocked yet.</p>
+  </section>
+
+  <footer class="note">No data is collected. Everything stays in your browser.</footer>
+  <script src="popup.js"></script>
+</body>
+</html>
