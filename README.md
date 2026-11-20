@@ -15,7 +15,7 @@ Pick the mode and manage allowed sites from the toolbar button.
 No data is collected and the add-on makes no network requests. Settings stay in your browser's extension storage.
 
 ## Install
-From Firefox Add-ons (addons.mozilla.org). Firefox 128 or later.
+From [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/popupblocker/). Firefox 128 or later.
 
 To run it from source: `npx web-ext run` in this folder.
 
